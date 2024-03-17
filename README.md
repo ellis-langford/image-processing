@@ -11,3 +11,4 @@ This repository contains several basic image processing Python scripts.
 
 - basic_tools.py
         load_nifti_image.py : loads nifti image from filepath using nibabel
+        save_nifti_image.py : saves nifti image to filepath using nibabel
