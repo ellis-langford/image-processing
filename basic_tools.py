@@ -8,3 +8,11 @@ def load_nifti_image(fpath):
     except Exception as e:
         print("Error loading NIfTI image:", e)
         return None, None
+    
+def save_nifti_image(data, affine, outpath):
+    try:
+        im = nib.Nifti1Image(data, affine)
+        nib.save(im, outpath)
+        print("NIfTI image saved successfully.")
+    except Exception as e:
+        print("Error saving NIfTI image:", e)
